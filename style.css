@@ -196,6 +196,18 @@ background-color: #242424;
 color: #242424;
 }
 
+@keyframes fade-up{
+  0%{
+      opacity: 0;
+      transform: translateY(40px);
+    }
+  
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 
 /* 
 
@@ -208,6 +220,8 @@ LANDING PAGE
   min-height: 100vh;
 }
 
+
+
 .header {
   position: absolute;
   top: 50%;
@@ -216,6 +230,8 @@ LANDING PAGE
   width: 100%;
   max-width: 1000px;
   padding: 0 30px;
+  animation: fade-up 1200ms 1200ms backwards;
+  
 }
 
 .header__para {
@@ -309,6 +325,7 @@ nav {
   margin: 0 auto;
   height: 100px;
   padding: 0 20px;
+  animation:fade-up 1200ms 600ms backwards;
 }
 
 #personal-logo {
